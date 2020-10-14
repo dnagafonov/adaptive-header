@@ -1,0 +1,78 @@
+@import "@scss/const.scss";
+
+.h1 {
+  font-size: $h1;
+  font-weight: $bold;
+}
+
+.h2 {
+  font-size: $h2;
+  font-weight: $bold;
+}
+
+.h3 {
+  font-size: $h3;
+  font-weight: $bold;
+}
+
+.text {
+  font-size: $text;
+  font-weight: $regular;
+}
+
+.pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 20px;
+  font-size: $text;
+  font-family: $font;
+}
+
+.t404 {
+  font-size: 15vh;
+  font-weight: $bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.ant-drawer-header {
+  padding: 15px 15px;
+}
+
+.ant-space-vertical {
+  width: 100%;
+}
+
+.Toastify__toast {
+  border-radius: $br;
+}
+
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 1s;
+  > .img {
+    animation: 1.8s infinite preloader;
+  }
+}
+
+@keyframes preloader {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media screen and (max-width: 1220px) {
+  .media1220 {
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
